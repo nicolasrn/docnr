@@ -1,0 +1,74 @@
+body {
+	width: 80%;
+	margin: auto;
+	border-width: 1px;
+	border-style: solid;
+	/*background-color: yellow;*/
+}
+
+body div.entete {
+	text-align: center;
+	position: fixed;
+	width: 80%;
+	background-color: gray;
+	top: 0px;
+}
+
+body div.entete h1 {
+	text-align: center;
+	width: 100%;
+}
+
+body div.content {
+	padding: 4em;
+	text-align: justify;
+	background-color: yellow;
+}
+
+/*classe permettant le placement de la barre inferieur fixe par rapport à l'ecran*/
+.barreInferieurFixe {
+	bottom: 0px;
+	position: fixed;
+	width: 80%;
+	height: 40px;
+	background-color: gray;
+	display: inline-block;
+}
+
+/*classe definissant la position du menu de droite*/
+.barreInferieurFixe .menuRight {
+	width: 200px;
+	height: 40px;
+	float: right;
+	background-color: orange;
+	display: inline-block;
+}
+
+.barreInferieurFixe .menuRight .contentMenu .menuDeroulant {
+	
+}
+
+/*classe representant l'ensemble menu deroulant et titre*/
+.barreInferieurFixe .menuRight .contentMenu {
+	background-color: purple;
+	/*background-color: gray;*/
+	position: relative;
+	overflow: hidden;
+	height: 0px;
+	top: 0px;
+}
+
+/*classe representant le titre du menu*/
+.barreInferieurFixe .menuRight .title { /*background-color: blue;*/
+	/*ces proprietes servent à avoir un titre immobile lors de l'animation du menu*/
+	position: absolute;
+	top: -15px;
+	background-color:brown;
+	width: 200px;
+	text-align: center;
+	cursor: default;
+}
+
+a, a:VISITED {
+	color: navy;
+}

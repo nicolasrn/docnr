@@ -44,6 +44,14 @@ body div.content {
 	display: inline-block;
 }
 
+.barreInferieurFixe .menuLeft {
+	width: 200px;
+	height: 40px;
+	float: left;
+	background-color: orange;
+	display: inline-block;
+}
+
 .barreInferieurFixe .menuRight .contentMenu .menuDeroulant {
 	
 }
@@ -60,7 +68,7 @@ body div.content {
 
 /*classe representant le titre du menu*/
 .barreInferieurFixe .menuRight .title { /*background-color: blue;*/
-	/*ces proprietes servent à avoir un titre immobile lors de l'animation du menu*/
+	/*ces proprietes servent a avoir un titre immobile lors de l'animation du menu*/
 	position: absolute;
 	top: -15px;
 	background-color:brown;

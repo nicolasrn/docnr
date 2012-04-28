@@ -6,11 +6,23 @@
 		
 		<!-- javascript -->
 		<script type="text/javascript" src="javascript/jquery.min.js"></script>
-		<script type="text/javascript" src="javascript/index.js"></script>
+		<script type="text/javascript" src="javascript/jQueryMenu.js"></script>
+		
+<!-- 		<script type="text/javascript" src="javascript/index.js"></script> -->
 		
 		<!-- css -->
 		<link type="text/css" href="css/index.css" rel="stylesheet">
 		
+		<script type="text/javascript">
+			$(function(){
+				var tabMenu = new Array();
+				tabMenu.push(['.title', '.menuD']);
+				tabMenu.push(['.titleB', '.menuG']);
+				
+				$('.menuD').toggleMenuDeroulant({button: '.title', delta: 10, listButtonMenu: tabMenu});
+				$('.menuG').toggleMenuDeroulant({button: '.titleB',	listButtonMenu: tabMenu});
+			})
+		</script>
 	</head>
 	
 	<body>
@@ -136,15 +148,27 @@
 		
 		<div id="barreInferieurFixe" class="barreInferieurFixe">
 			<div class="menuRight">
-				<div class="contentMenu">
-					<ul class="menuDeroulant">
+				<div class="menuD">
+					<ul class="deroulable">
 						<li><a href="http://www.google.fr">Google</a></li>
 						<li><a href="http://www.siteduzero.com">Site Du Z&eacute;ro</a></li>
 						<li><a href="http://www.commentcamarche.com">Comment Ca Marche</a></li>
-						<li><a href="http://www.gaara-fr.com">Gaara-Fr</a></li>
+						<li><a href="http://www.gaara-fr.com">Gaara-Fr balbla balbla balbla balbla balbla balbla balbla balbla balbla balbla balbla balbla balbla balbla balbla balbla balbla </a></li>
 					</ul>
 				</div>
 				<h3 class="title">Menu</h3>
+			</div>
+			
+			<div class="menuLeft">
+				<div class="menuG">
+					<ul class="deroulable">
+						<li><a href="http://www.google.fr">1</a></li>
+						<li><a href="http://www.siteduzero.com">2</a></li>
+						<li><a href="http://www.commentcamarche.com">3</a></li>
+						<li><a href="http://www.gaara-fr.com">4</a></li>
+					</ul>
+				</div>
+				<h3 class="titleB">Menu</h3>
 			</div>
 		</div>
 	</body>

@@ -20,8 +20,8 @@
 				tabMenu.push('.menuRight');
 				tabMenu.push('.menuLeft');
 				
-				$('.menuRight').toggleMenuDeroulant({delta: 10, listButtonMenu: tabMenu});
-				$('.menuLeft').toggleMenuDeroulant({listButtonMenu: tabMenu});
+				$('.menuRight').toggleMenuDeroulant({delta: 10, listButtonMenu: tabMenu, toTop: true});
+				$('.menuLeft').toggleMenuDeroulant({listButtonMenu: tabMenu, toTop: true});
 				$('.menuCentral').toggleMenuDeroulant({listButtonMenu: tabMenu, toTop: false});
 			})
 		</script>
@@ -31,6 +31,7 @@
 		<div class="entete">
 			<h1>Voici un site super original</h1>
 			<div class="menuCentral">
+				<h3 class="title">Menu</h3>
 				<div class="menu">
 					<ul class="deroulable">
 						<li>1</li>
@@ -39,7 +40,6 @@
 						<li>4</li>
 					</ul>
 				</div>
-				<h3 class="title">Menu</h3>
 			</div>
 		</div>
 		

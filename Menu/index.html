@@ -15,12 +15,14 @@
 		
 		<script type="text/javascript">
 			$(function(){
+				//déclaration de la liste d'exclusion mutuelle empeche l'ouverture simultanée des menus spécifiés 
 				var tabMenu = new Array();
-				tabMenu.push(['.title', '.menuD']);
-				tabMenu.push(['.titleB', '.menuG']);
+				tabMenu.push('.menuRight');
+				tabMenu.push('.menuLeft');
 				
-				$('.menuD').toggleMenuDeroulant({button: '.title', delta: 10, listButtonMenu: tabMenu});
-				$('.menuG').toggleMenuDeroulant({button: '.titleB',	listButtonMenu: tabMenu});
+				$('.menuRight').toggleMenuDeroulant({delta: 10, listButtonMenu: tabMenu});
+				$('.menuLeft').toggleMenuDeroulant({listButtonMenu: tabMenu});
+				$('.menuCentral').toggleMenuDeroulant({listButtonMenu: tabMenu, toTop: false});
 			})
 		</script>
 	</head>
@@ -28,6 +30,17 @@
 	<body>
 		<div class="entete">
 			<h1>Voici un site super original</h1>
+			<div class="menuCentral">
+				<div class="menu">
+					<ul class="deroulable">
+						<li>1</li>
+						<li>2</li>
+						<li>3</li>
+						<li>4</li>
+					</ul>
+				</div>
+				<h3 class="title">Menu</h3>
+			</div>
 		</div>
 		
 		<div id="content" class="content">
@@ -148,7 +161,7 @@
 		
 		<div id="barreInferieurFixe" class="barreInferieurFixe">
 			<div class="menuRight">
-				<div class="menuD">
+				<div class="menu">
 					<ul class="deroulable">
 						<li><a href="http://www.google.fr">Google</a></li>
 						<li><a href="http://www.siteduzero.com">Site Du Z&eacute;ro</a></li>
@@ -160,7 +173,7 @@
 			</div>
 			
 			<div class="menuLeft">
-				<div class="menuG">
+				<div class="menu">
 					<ul class="deroulable">
 						<li><a href="http://www.google.fr">1</a></li>
 						<li><a href="http://www.siteduzero.com">2</a></li>
@@ -168,7 +181,7 @@
 						<li><a href="http://www.gaara-fr.com">4</a></li>
 					</ul>
 				</div>
-				<h3 class="titleB">Menu</h3>
+				<h3 class="title">Menu</h3>
 			</div>
 		</div>
 	</body>

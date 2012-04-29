@@ -44,7 +44,7 @@
 		//lors d'un clic on demande un comportement toggle pour plier et deplier le menu
 		$(this).find(parametres['button']).toggle(function(event) {
 			var top = parametres['toTop'] === true ? -parametres['delta'] - taille : parametres['delta'] + taille ;
-			$(theMenu).find(parametres['menu']).stop().animate({height : taille,top : top}, {queue : false,duration : parametres['duration']});
+			$(theMenu).find(parametres['menu']).stop().animate({height : taille, top : top}, {queue : false,duration : parametres['duration']});
 			$.each(parametres['listButtonMenu'], function(index, item) {
 				if ($(item).text() != $(theMenu).text() && $(item).find(parametres['menu']).toggleMenuIsOpen())
 					$(item).find(parametres['button']).click();

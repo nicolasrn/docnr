@@ -52,6 +52,14 @@ body div.content {
 	display: inline-block;
 }
 
+.menuCentral {
+	width: 200px;
+	float: left;
+	background-color: orange;
+	display: inline-block;
+	text-align: left;
+}
+
 .barreInferieurFixe .menuRight .contentMenu .menuDeroulant {
 	
 }

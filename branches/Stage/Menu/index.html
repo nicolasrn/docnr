@@ -19,10 +19,11 @@
 				var tabMenu = new Array();
 				tabMenu.push('.menuRight');
 				tabMenu.push('.menuLeft');
+// 				tabMenu.push('.menuCentral');
 				
 				$('.menuRight').toggleMenuDeroulant({delta: 10, listButtonMenu: tabMenu, toTop: true});
 				$('.menuLeft').toggleMenuDeroulant({listButtonMenu: tabMenu, toTop: true});
-				$('.menuCentral').toggleMenuDeroulant({listButtonMenu: tabMenu, toTop: false});
+				$('.menuCentral').toggleMenuDeroulant({delta: 100, toTop: false});
 			})
 		</script>
 	</head>
@@ -31,13 +32,13 @@
 		<div class="entete">
 			<h1>Voici un site super original</h1>
 			<div class="menuCentral">
-				<h3 class="title">Menu</h3>
+				<p class="title">Menu</p>
 				<div class="menu">
 					<ul class="deroulable">
-						<li>1</li>
-						<li>2</li>
-						<li>3</li>
-						<li>4</li>
+						<li><a>1 super blabla super blabla super blabla super blabla super blabla super blabla super blabla super blabla super blabla super blabla </a></li>
+						<li><a>2 super blabla super blabla super blabla super blabla super blabla super blabla super blabla super blabla super blabla super blabla </a></li>
+						<li><a>3 super blabla super blabla super blabla super blabla super blabla super blabla super blabla </a></li>
+						<li><a>4 super blabla super blabla super blabla super blabla super blabla super blabla super blabla super blabla super blabla </a></li>
 					</ul>
 				</div>
 			</div>
@@ -169,19 +170,19 @@
 						<li><a href="http://www.gaara-fr.com">Gaara-Fr balbla balbla balbla balbla balbla balbla balbla balbla balbla balbla balbla balbla balbla balbla balbla balbla balbla </a></li>
 					</ul>
 				</div>
-				<h3 class="title">Menu</h3>
+				<p class="title">Menu</p>
 			</div>
 			
 			<div class="menuLeft">
 				<div class="menu">
 					<ul class="deroulable">
-						<li><a href="http://www.google.fr">1</a></li>
-						<li><a href="http://www.siteduzero.com">2</a></li>
-						<li><a href="http://www.commentcamarche.com">3</a></li>
-						<li><a href="http://www.gaara-fr.com">4</a></li>
+						<li><a href="http://www.google.fr">1 hého hého hého hého hého hého hého hého hého hého hého hého hého hého hého </a></li>
+						<li><a href="http://www.siteduzero.com">2 hého hého hého hého hého hého hého hého hého hého hého hého hého hého hého hého </a></li>
+						<li><a href="http://www.commentcamarche.com">3 hého hého hého hého hého hého hého hého hého hého hého hého hého hého hého hého </a></li>
+						<li><a href="http://www.gaara-fr.com">4 hého hého hého hého hého hého hého hého hého hého hého hého hého hého hého hého hého hého hého </a></li>
 					</ul>
 				</div>
-				<h3 class="title">Menu</h3>
+				<p class="title">Menu</p>
 			</div>
 		</div>
 	</body>

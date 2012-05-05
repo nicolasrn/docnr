@@ -30,7 +30,7 @@ body div.content {
 	bottom: 0px;
 	position: fixed;
 	width: 80%;
-	height: 40px;
+/* 	height: 40px; */
 	background-color: gray;
 	display: inline-block;
 }
@@ -38,7 +38,7 @@ body div.content {
 /*classe definissant la position du menu de droite*/
 .barreInferieurFixe .menuRight {
 	width: 200px;
-	height: 40px;
+/* 	height: 40px; */
 	float: right;
 	background-color: orange;
 	display: inline-block;
@@ -46,7 +46,7 @@ body div.content {
 
 .barreInferieurFixe .menuLeft {
 	width: 200px;
-	height: 40px;
+/* 	height: 40px; */
 	float: left;
 	background-color: orange;
 	display: inline-block;
@@ -78,11 +78,29 @@ body div.content {
 .barreInferieurFixe .menuRight .title { /*background-color: blue;*/
 	/*ces proprietes servent a avoir un titre immobile lors de l'animation du menu*/
 	position: absolute;
-	top: -15px;
+/* 	top: -15px; */
 	background-color:brown;
 	width: 200px;
 	text-align: center;
 	cursor: default;
+}
+
+.menu ul.deroulable li {
+	padding: 0px;
+	display: inline;
+}
+
+.menu ul.deroulable {
+	padding: 0px;
+}
+
+.flow .item, .flow .item div {
+	display: inline;
+/* 	cursor: pointer; */
+}
+
+.flow .item img {
+	display: none;
 }
 
 a, a:VISITED {

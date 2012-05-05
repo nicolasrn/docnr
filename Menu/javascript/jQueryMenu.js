@@ -18,6 +18,9 @@
 						'top': '0px',
 						'background-color' : 'pink'
 					},
+			'cssli': {
+						'display': 'list-item'
+			},
 			'listButtonMenu' : {},
 			'duration' : 600
 		}
@@ -36,6 +39,7 @@
 		//attribution du css
 		$(theMenu).find(parametres['menu']).css(parametres['css']);
 		$(theMenu).find(parametres['deroulable']).css('margin', '0px');
+		$(theMenu).find(parametres['deroulable'] + ' li').css(parametres['cssli']);
 		
 		//calcul de la taille à allouer lors du déroulement
 		var taille = 0;

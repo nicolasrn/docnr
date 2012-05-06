@@ -8,19 +8,20 @@ body {
 
 body div.entete {
 	text-align: center;
-	position: fixed;
-	width: 80%;
+	/*position: fixed;*/
+	width: 100%;
 	background-color: gray;
-	top: 0px;
+	/*top: 0px;*/
 }
 
 body div.entete h1 {
 	text-align: center;
 	width: 100%;
+	margin:auto;
 }
 
 body div.content {
-	padding: 4em;
+	padding: 2em;
 	text-align: justify;
 	background-color: yellow;
 }

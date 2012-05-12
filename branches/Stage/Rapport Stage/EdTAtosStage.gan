@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project name="Untitled Gantt Project" company="" webLink="http://" view-date="2012-03-19" view-index="0" gantt-divider-location="519" resource-divider-location="-1" version="2.0">
+<project name="Untitled Gantt Project" company="" webLink="http://" view-date="2012-04-07" view-index="0" gantt-divider-location="615" resource-divider-location="302" version="2.0">
     <description/>
     <view zooming-state="default:2" id="gantt-chart"/>
     <view id="resource-table">
@@ -35,16 +35,32 @@
         <task id="0" name="installation poste + logiciel (Jahia, BdD, svn, etc.)" color="#8cb6ce" meeting="false" start="2012-03-19" duration="2" complete="0" priority="1" expand="true"/>
         <task id="1" name="formation Jahia" color="#8cb6ce" meeting="false" start="2012-03-21" duration="2" complete="0" priority="1" expand="true"/>
         <task id="3" name="révision fonctionnement test + mise au point structuration projet" color="#8cb6ce" meeting="false" start="2012-03-23" duration="1" complete="0" priority="1" expand="true"/>
-        <task id="4" name="Correction mineur sur le portail des lorrains + pré-test sur machine développeur puis test intégration" color="#8cb6ce" meeting="false" start="2012-03-26" duration="1" complete="0" priority="1" expand="true"/>
+        <task id="4" name="Correction mineur sur le portail des lorrains + pré-test sur machine développeur" color="#8cb6ce" meeting="false" start="2012-03-26" duration="1" complete="0" priority="1" expand="true"/>
         <task id="5" name="puis test intégration" color="#8cb6ce" meeting="false" start="2012-03-27" duration="1" complete="0" priority="1" expand="true"/>
+        <task id="6" name="mise en forme des fiches de tests + recherche readspeaker" color="#8cb6ce" meeting="false" start="2012-03-28" duration="4" complete="0" priority="1" expand="true"/>
+        <task id="7" name="FML" color="#8cb6ce" meeting="false" start="2012-04-02" duration="12" complete="0" priority="1" expand="true"/>
+        <task id="8" name="PDL v2" color="#8cb6ce" meeting="false" start="2012-03-15" duration="11" complete="0" priority="1" expand="true">
+            <task id="10" name="têtière" color="#8cb6ce" meeting="false" start="2012-03-15" duration="1" complete="0" priority="1" expand="true">
+                <task id="9" name="Slider partenaire entete" color="#8cb6ce" meeting="false" start="2012-04-18" duration="2" complete="0" priority="1" expand="true"/>
+                <task id="11" name="Logo" color="#8cb6ce" meeting="false" start="2012-03-29" duration="1" complete="0" priority="1" expand="true"/>
+                <task id="12" name="Accroche" color="#8cb6ce" meeting="false" start="2012-03-29" duration="1" complete="0" priority="1" expand="true"/>
+            </task>
+            <task id="13" name="Barre permanente" color="#8cb6ce" meeting="false" start="2012-03-29" duration="1" complete="0" priority="1" expand="true">
+                <task id="14" name="Publicité" color="#8cb6ce" meeting="false" start="2012-03-29" duration="1" complete="0" priority="1" expand="true"/>
+                <task id="15" name="Slider partenaire" color="#8cb6ce" meeting="false" start="2012-03-29" duration="1" complete="0" priority="1" expand="true"/>
+                <task id="16" name="Entrée par cible" color="#8cb6ce" meeting="false" start="2012-03-29" duration="1" complete="0" priority="1" expand="true"/>
+                <task id="17" name="Espace privé" color="#8cb6ce" meeting="false" start="2012-03-29" duration="1" complete="0" priority="1" expand="true"/>
+            </task>
+        </task>
+        <task id="18" name="Cartographie" color="#8cb6ce" meeting="false" start="2012-05-10" duration="6" complete="0" priority="1" expand="true"/>
     </tasks>
     <resources/>
     <allocations/>
     <vacations/>
     <taskdisplaycolumns>
-        <displaycolumn property-id="tpd3" order="0" width="557"/>
-        <displaycolumn property-id="tpd4" order="1" width="15"/>
-        <displaycolumn property-id="tpd5" order="2" width="15"/>
+        <displaycolumn property-id="tpd3" order="0" width="388"/>
+        <displaycolumn property-id="tpd4" order="1" width="100"/>
+        <displaycolumn property-id="tpd5" order="2" width="99"/>
     </taskdisplaycolumns>
     <previous/>
     <roles roleset-name="Default"/>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Untitled Gantt Project" company="" webLink="http://" view-date="2012-03-19" view-index="0" gantt-divider-location="519" resource-divider-location="-1" version="2.0">
+    <description/>
+    <view zooming-state="default:2" id="gantt-chart"/>
+    <view id="resource-table">
+        <field id="0" name="Nom" width="55" order="0"/>
+        <field id="1" name="Rôle par défaut" width="44" order="1"/>
+    </view>
+    <!-- -->
+    <calendars>
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <calendar id="1" name="default">
+                <default-week sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="1"/>
+                <overriden-day-types/>
+                <days/>
+            </calendar>
+        </day-types>
+    </calendars>
+    <tasks color="#8cb6ce">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="2" name="lecture doc fonctionnement Atos (projet, etc.)" color="#8cb6ce" meeting="false" start="2012-03-19" duration="1" complete="0" priority="1" expand="true"/>
+        <task id="0" name="installation poste + logiciel (Jahia, BdD, svn, etc.)" color="#8cb6ce" meeting="false" start="2012-03-19" duration="2" complete="0" priority="1" expand="true"/>
+        <task id="1" name="formation Jahia" color="#8cb6ce" meeting="false" start="2012-03-21" duration="2" complete="0" priority="1" expand="true"/>
+        <task id="3" name="révision fonctionnement test + mise au point structuration projet" color="#8cb6ce" meeting="false" start="2012-03-23" duration="1" complete="0" priority="1" expand="true"/>
+        <task id="4" name="Correction mineur sur le portail des lorrains + pré-test sur machine développeur puis test intégration" color="#8cb6ce" meeting="false" start="2012-03-26" duration="1" complete="0" priority="1" expand="true"/>
+        <task id="5" name="puis test intégration" color="#8cb6ce" meeting="false" start="2012-03-27" duration="1" complete="0" priority="1" expand="true"/>
+    </tasks>
+    <resources/>
+    <allocations/>
+    <vacations/>
+    <taskdisplaycolumns>
+        <displaycolumn property-id="tpd3" order="0" width="557"/>
+        <displaycolumn property-id="tpd4" order="1" width="15"/>
+        <displaycolumn property-id="tpd5" order="2" width="15"/>
+    </taskdisplaycolumns>
+    <previous/>
+    <roles roleset-name="Default"/>
+    <roles roleset-name="SoftwareDevelopment"/>
+</project>

@@ -97,11 +97,11 @@ body div.content {
 
 .flow .item, .flow .item div {
 	display: inline;
-/* 	cursor: pointer; */
+	cursor: pointer;
 }
 
 .flow .item img {
-	display: none;
+/* 	display: none; */
 }
 
 a, a:VISITED {

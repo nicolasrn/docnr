@@ -7,3 +7,5 @@
 - insérer les éléments de
   la charte graphique dans	:	entree par cible et espaceprive (bouton => pas de menu; supposition identique a l'entree par cible) + publicite (dimension ? ; supposition fond identique aux menus) + mettre fond pour le tooltip
   la barre
+
+- crlo carto			:	découpage + négociation pour le bouton rechercher

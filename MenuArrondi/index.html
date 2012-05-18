@@ -40,8 +40,41 @@
 				tabMenu.push('.menuLeft');
 // 				tabMenu.push('.menuCentral');
 				
-				$('.menuRight').toggleMenuDeroulant({delta: 10, listButtonMenu: tabMenu, toTop: true});
-				$('.menuLeft').toggleMenuDeroulant({listButtonMenu: tabMenu, toTop: true});
+				$('.menuRight').toggleMenuDeroulant({
+														delta: 10,
+														listButtonMenu: tabMenu,
+														toTop: true,
+														css:  {
+															'position': 'absolute',
+															'overflow': 'hidden',
+															'height': '0px',
+															'top': '0px',
+															'background-image': 'url("img/pixel.png")',
+															/*'background-color': 'pink',*/
+															'width': '80px',
+															'text-align':'center',
+															'-moz-border-radius': '10px',
+															'-webkit-border-radius': '10px',
+															'border-radius': '10px',
+															'behavior': 'url(./PIE.htc)'
+														}
+													});
+				$('.menuLeft').toggleMenuDeroulant({
+														listButtonMenu: tabMenu, 
+														toTop: true, 
+														css:  {
+															'position': 'absolute',
+															'overflow': 'hidden',
+															'height': '0px',
+															'top': '0px',
+															'background-image': 'url("img/pixel.png")',
+															/*'background-color': 'pink',*/
+															'-moz-border-radius': '10px',
+															'-webkit-border-radius': '10px',
+															'border-radius': '10px',
+															'behavior': 'url(./PIE.htc)'
+														}
+													});
 // 				$('.menuCentral').toggleMenuDeroulant({delta: 100, toTop: false});
 
 				$('.barreInferieurFixe').css('height', '40px');

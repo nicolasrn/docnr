@@ -41,15 +41,15 @@
 		$(theMenu).find(parametres['deroulable']).css('margin', '0px');
 		$(theMenu).find(parametres['deroulable'] + ' li').css(parametres['cssli']);
 		
-		//calcul de la taille ˆ allouer lors du droulement
-		var taille = 0;
-		$(theMenu).find(parametres['deroulable']).first().children().each(function(index, item)
-		{
-			taille += $(item).outerHeight();
-		});
-		
 		//lors d'un clic on demande un comportement toggle pour plier et deplier le menu
 		$(theMenu).find(parametres['button']).toggle(function(event) {
+			//calcul de la taille ˆ allouer lors du droulement
+			var taille = 0;
+			$(theMenu).find(parametres['deroulable']).first().children().each(function(index, item)
+			{
+				taille += $(item).outerHeight();
+			});
+			
 			var vtop = parametres['toTop'] ? -parametres['delta'] - taille : parametres['delta'] + taille ;
 			
 			if (vtop > 0) //droulage vers le bas

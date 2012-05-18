@@ -15,8 +15,7 @@
 						'position': 'absolute',
 						'overflow': 'hidden',
 						'height': '0px',
-						'top': '0px',
-						'background-color' : 'pink'
+						'top': '0px'
 					},
 			'cssli': {
 						'display': 'list-item'
@@ -47,7 +46,7 @@
 			var taille = 0;
 			$(theMenu).find(parametres['deroulable']).first().children().each(function(index, item)
 			{
-				taille += $(item).outerHeight();
+				taille += $(item).outerHeight(true);
 			});
 			
 			var vtop = parametres['toTop'] ? -parametres['delta'] - taille : parametres['delta'] + taille ;

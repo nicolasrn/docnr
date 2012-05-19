@@ -56,7 +56,7 @@
 															'-moz-border-radius': '10px',
 															'-webkit-border-radius': '10px',
 															'border-radius': '10px',
-															'behavior': 'url(./PIE.htc)'
+															'behavior': 'url("./PIE.htc")'
 														}
 													});
 				$('.menuLeft').toggleMenuDeroulant({
@@ -72,12 +72,26 @@
 															'-moz-border-radius': '10px',
 															'-webkit-border-radius': '10px',
 															'border-radius': '10px',
-															'behavior': 'url(./PIE.htc)'
+															'behavior': 'url("./PIE.htc")'
 														}
 													});
 // 				$('.menuCentral').toggleMenuDeroulant({delta: 100, toTop: false});
 
 				$('.barreInferieurFixe').css('height', '40px');
+				
+// 				$('.menu ul.deroulable li').mouseover(function(){
+// 					$.data($(this)[0], 'cssHover', $(this).attr('style'));
+// 					$(this).css({
+// 						'-moz-border-radius': '10px',
+// 						'-webkit-border-radius': '10px',
+// 						'border-radius': '10px',
+// 						'behavior': "url('./PIE.htc')",
+// 						'background-color': 'red'
+// 					});
+// 				}).mouseout(function(){
+// 					$(this).attr('style', $.data($(this)[0], 'cssHover'));
+// 				});
+
 // 				$('.menuLeft').css('height', '40px');
 			})
 		</script>

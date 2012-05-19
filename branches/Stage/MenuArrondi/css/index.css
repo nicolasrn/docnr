@@ -92,11 +92,11 @@ body div.content {
 }
 
 .menu ul.deroulable li:HOVER {
-	background-color: red;
 	-moz-border-radius: 10px;
 	-webkit-border-radius: 10px;
 	border-radius: 10px;
-	behavior: url(./PIE.htc);
+	[if lt IE 9]	behavior: url('./PIE.htc');
+	background-color: red;
 }
 
 .menu ul.deroulable {

@@ -91,12 +91,9 @@ body div.content {
 	display: inline;
 }
 
-.menu ul.deroulable li:HOVER {
-	-moz-border-radius: 10px;
-	-webkit-border-radius: 10px;
-	border-radius: 10px;
-	[if lt IE 9]	behavior: url('./PIE.htc');
+.menu ul.deroulable li *:HOVER {
 	background-color: red;
+	display: block;
 }
 
 .menu ul.deroulable {

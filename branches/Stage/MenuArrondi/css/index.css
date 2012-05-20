@@ -91,9 +91,12 @@ body div.content {
 	display: inline;
 }
 
+.menu ul.deroulable li *{
+	display: block;
+}
+
 .menu ul.deroulable li *:HOVER {
 	background-color: red;
-	display: block;
 }
 
 .menu ul.deroulable {

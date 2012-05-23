@@ -4,17 +4,55 @@
 		<meta charset="utf-8" />
 		<title>Test transparence</title>
 		<style type="text/css">
-			div {
-				background-image: url("couleur1.png");
-				background-image: url("couleur1.png"), url("couleur2.png");
-				background-repeat: repeat;
+			div.zone {
+				/*on fixe les dimensions en pixel 
+				=> avantage pas besoin de mettre de contenu pour avoir un visuel*/
 				width: 100px;
 				height:100px;
-			)
+			}
+			
+			div.css3 {
+				/* le plus a droite est pose en premier */
+				background-image: url("couleur1.png"), url("couleur2.png"); 
+				background-repeat: repeat;
+			}
+			
+			div.contenaire {
+				/*pour que les enfants en absolu restent dans cette div*/
+				position: relative;
+			}
+			
+			div.bg {
+				/*pour que les calques se superposent*/
+				position: absolute;
+				top: 0px;
+				left: 0px;
+			}
+			
+			div.bgc1 {
+				background-image: url("couleur1.png");
+			}
+			
+			div.bgc2 {
+				background-image: url("couleur2.png");
+			}
 		</style>
 	</head>
 	
 	<body>
-		<div>un test pour la route</div>
+		<h1>Remarques</h1>
+		<p>
+			l'ordonnancement des fonds est importante
+		</p>
+		
+		<h1>Tests</h1>
+		<h2>CSS 3</h2>
+		<div class="zone css3"></div>
+		
+		<h2>Superposition de div</h2>
+		<div class="zone contenaire">
+			<div class="zone bg bgc2"></div>
+			<div class="zone bg bgc1"></div>
+		</div>
 	</body>
 </html>

@@ -9,25 +9,64 @@
 				form.submit();
 			}
 		</script>
+		
+		<style type="text/css">
+			html {
+				font-size: 100%;
+			}
+			
+			body {
+				font-size: 0.8em;
+			}
+			
+			fieldset {
+				width: 45%;
+				float: left;
+				margin: 0% 1% 0% 1%;
+				padding: 1%;
+			}
+			
+			label, input {
+				display: block;
+				float: left;
+				width: 49%;
+			}
+			
+			div.clear {
+				clear: both;
+			}
+			
+			div#mainwrapper {
+				width: 50%;
+				margin: auto;
+				height: 100px;
+			}
+			
+			br {
+				clear: left;
+			}
+		</style>
 	</head>
 	
 	<body>
-		<form action="action.html">
-			<fieldset>
-				<legend>Formulaire de test javascript non intrusif</legend>
-				<label for="idNom">Nom</label><input type="text" id="idNom" name="nom">
-				<label for="idPrenom">Prénom</label><input type="text" id="idPrenom" name="prenom">
-				<input type="submit">
-			</fieldset>
-		</form>
-		
-		<form action="action.html" name="form">
-			<fieldset>
-				<legend>Formulaire de test javascript non intrusif</legend>
-				<label for="idNom2">Nom</label><input type="text" id="idNom2" name="nom">
-				<label for="idPrenom2">Prénom</label><input type="text" id="idPrenom2" name="prenom">
-				<input type="button" onclick="valider(form);" value="Envoyer">
-			</fieldset>
-		</form>
+		<div id="mainwrapper">
+			<form action="action.html">
+				<fieldset>
+					<legend>Formulaire de test javascript non intrusif</legend>
+					<label for="idNom">Nom</label><input type="text" id="idNom" name="nom"><br />
+					<label for="idPrenom">Prénom</label><input type="text" id="idPrenom" name="prenom"><br />
+					<input type="submit">
+				</fieldset>
+			</form>
+			
+			<form action="action.html">
+				<fieldset>
+					<legend>Formulaire de test javascript intrusif</legend>
+					<label for="idNom2">Nom</label><input type="text" id="idNom2" name="nom"><br />
+					<label for="idPrenom2">Prénom</label><input type="text" id="idPrenom2" name="prenom"><br />
+					<input type="button" onclick="valider(this.form);" value="Envoyer">
+				</fieldset>
+			</form>
+		</div>
 	</body>
 </html>

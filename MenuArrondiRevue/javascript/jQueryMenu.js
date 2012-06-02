@@ -11,7 +11,7 @@
 			'css' : {
 						'height': '0px',
 						'top': '0px',
-						'border': '0px'
+						'border': '0px solid white'
 					},
 			'cssli': {
 						'display': 'list-item'

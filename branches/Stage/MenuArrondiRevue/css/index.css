@@ -47,10 +47,22 @@ body div.content {
 
 .barreInferieurFixe .menuLeft {
 	width: 200px;
-/* 	height: 40px; */
 	float: left;
 	background-color: orange;
 	display: inline-block;
+}
+
+.menu {
+	position: absolute;
+	overflow: hidden;
+	
+	background-image: url("../img/pixel.png");
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	behavior: url('../PIE.htc');
+	
+	border: 2px solid white;
 }
 
 .menuCentral {
@@ -95,7 +107,7 @@ body div.content {
 	display: block;
 }
 
-.menu ul.deroulable li *:HOVER {
+.menu ul.deroulable li:HOVER * {
 	background-color: red;
 }
 

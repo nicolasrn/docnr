@@ -1,9 +1,6 @@
 (function($){
 	$.fn.toggleMenuDeroulant=function(options)
-	{	
-		//pour garder une référence sur l'objet courant
-		var theMenu = $(this);
-		
+	{
 		//parametres par défauts
 		var defauts = {
 			'button' : '.title',
@@ -12,10 +9,9 @@
 			'delta' : 0,
 			'toTop' : true,
 			'css' : {
-						'position': 'absolute',
-						'overflow': 'hidden',
 						'height': '0px',
-						'top': '0px'
+						'top': '0px',
+						'border': '0px'
 					},
 			'cssli': {
 						'display': 'list-item'
@@ -27,6 +23,10 @@
 		//délégation à jQuery pour fusionner les paramètres par défauts avec les options de l'utilisateur du plug-in
 		var parametres = $.extend(defauts, options);
 		
+		//pour garder une référence sur l'objet courant
+		var theMenu = $(this);
+		var classMenu = $(this).find(parametres['menu']);
+		
 		//mise des propriétés si besoin
 		//si besoin d'une marge
 		if (parametres['delta'] != 0)
@@ -36,6 +36,8 @@
 			parametres['css']['top'] = 'auto';
 		
 		//attribution du css
+		$.data($(classMenu)[0], 'cssBordureMenu', $(classMenu).css('border'));
+		
 		$(theMenu).find(parametres['menu']).css(parametres['css']);
 		$(theMenu).find(parametres['deroulable']).css('margin', '0px');
 		$(theMenu).find(parametres['deroulable'] + ' li').css(parametres['cssli']);
@@ -51,10 +53,29 @@
 			
 			var vtop = parametres['toTop'] ? -parametres['delta'] - taille : parametres['delta'] + taille ;
 			
+			$(classMenu).css('border', $.data($(classMenu)[0], 'cssBordureMenu'));
 			if (vtop > 0) //déroulage vers le bas
-				$(theMenu).find(parametres['menu']).stop().animate({height : taille, bottom: -taille}, {queue : false,duration : parametres['duration']});
+				$(classMenu).stop().animate({
+					height : taille,
+					bottom: -taille
+				}, {
+					queue : false,
+					duration : parametres['duration'],
+					complete: function() {
+						
+					}
+				});
 			else //déroulage vers le haut
-				$(theMenu).find(parametres['menu']).stop().animate({height : taille, top : vtop}, {queue : false,duration : parametres['duration']});
+				$(classMenu).stop().animate({
+					height : taille,
+					top : vtop
+				}, {
+					queue : false,
+					duration : parametres['duration'], 
+					complete: function(){
+						
+					}
+				});
 			
 			$.each(parametres['listButtonMenu'], function(index, item) {
 				if ($(item).text() != $(theMenu).text() && $(item).find(parametres['menu']).toggleMenuIsOpen())
@@ -63,9 +84,27 @@
 		},
 		function(event) {
 			if (parametres['toTop'])
-				$(theMenu).find(parametres['menu']).stop().animate({height : "0px", top : -parametres['delta']}, {queue : false,duration : parametres['duration']});
+				$(classMenu).stop().animate({
+					height : "0px",
+					top : -parametres['delta']
+				}, {
+					queue : false,
+					duration : parametres['duration'], 
+					complete: function() {
+						$(classMenu).css('border', '0px');
+					}
+				});
 			else
-				$(theMenu).find(parametres['menu']).stop().animate({height : "0px", bottom: -taille}, {queue : false,duration : parametres['duration']});
+				$(classMenu).stop().animate({
+					height : "0px", 
+					bottom: -taille
+				}, {
+					queue : false,
+					duration : parametres['duration'], 
+					complete: function() {
+						$(classMenu).css('border', '0px');
+					}
+				});
 		});
 		
 		return this;

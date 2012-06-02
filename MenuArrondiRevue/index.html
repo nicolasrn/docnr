@@ -38,61 +38,17 @@
 				var tabMenu = new Array();
 				tabMenu.push('.menuRight');
 				tabMenu.push('.menuLeft');
-// 				tabMenu.push('.menuCentral');
 				
 				$('.menuRight').toggleMenuDeroulant({
 														delta: 10,
-														listButtonMenu: tabMenu,
-														toTop: true,
-														css:  {
-															'position': 'absolute',
-															'overflow': 'hidden',
-															'height': '0px',
-															'top': '0px',
-															'background-image': 'url("img/pixel.png")',
-															/*'background-color': 'pink',*/
-															'width': '80px',
-															'text-align':'center',
-															'-moz-border-radius': '10px',
-															'-webkit-border-radius': '10px',
-															'border-radius': '10px',
-															'behavior': 'url("http://localhost/MenuArrondi/PIE.htc")'
-														}
+														listButtonMenu: tabMenu
 													});
 				$('.menuLeft').toggleMenuDeroulant({
-														listButtonMenu: tabMenu, 
-														toTop: true, 
-														css:  {
-															'position': 'absolute',
-															'overflow': 'hidden',
-															'height': '0px',
-															'top': '0px',
-															'background-image': 'url("img/pixel.png")',
-															/*'background-color': 'pink',*/
-															'-moz-border-radius': '10px',
-															'-webkit-border-radius': '10px',
-															'border-radius': '10px',
-															'behavior': 'url("./PIE.htc")'
-														}
+														delta: 10,
+														listButtonMenu: tabMenu
 													});
-// 				$('.menuCentral').toggleMenuDeroulant({delta: 100, toTop: false});
-
-				$('.barreInferieurFixe').css('height', '40px');
 				
-// 				$('.menu ul.deroulable li').mouseover(function(){
-// 					$.data($(this)[0], 'cssHover', $(this).attr('style'));
-// 					$(this).css({
-// 						'-moz-border-radius': '10px',
-// 						'-webkit-border-radius': '10px',
-// 						'border-radius': '10px',
-// 						'behavior': "url('./PIE.htc')",
-// 						'background-color': 'red'
-// 					});
-// 				}).mouseout(function(){
-// 					$(this).attr('style', $.data($(this)[0], 'cssHover'));
-// 				});
-
-// 				$('.menuLeft').css('height', '40px');
+				$('.barreInferieurFixe').css('height', '40px');
 			})
 		</script>
 	</head>
@@ -100,7 +56,7 @@
 	<body>
 		<div class="entete">
 			<h1><a href="./index.html"><img src="../Menu/image/logo_sdz_fr.png" alt="le site du zéro"/></a></h1>
-			<div id="contentFlow" class="ContentFlow">
+			<div id="contentFlow" class="ContentFlow" useAddOns="DEFAULT">
 				<!-- should be place before flow so that contained images will be loaded first -->
 				<div class="loadIndicator">
 					<div class="indicator"></div>

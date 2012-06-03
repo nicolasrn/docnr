@@ -41,7 +41,10 @@
  *
  */
 .ContentFlowAddOn_DEFAULT {
-	
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	width: 400px;
 }
 
 /* ----- styling of items ----- */

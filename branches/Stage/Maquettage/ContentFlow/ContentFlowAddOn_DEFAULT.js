@@ -78,7 +78,7 @@ new ContentFlowAddOn ('DEFAULT', {
         loadingTimeout: 30000,          // milliseconds
         activeElement: 'content',       // item or content
 
-        maxItemHeight: 50,               // 0 == auto, >0 max item height in px
+        maxItemHeight: 100,               // 0 == auto, >0 max item height in px
         scaleFactor: 1.0,               // overall scale factor of content
         scaleFactorLandscape: 1.33,     // scale factor of landscape images ('max' := height= maxItemHeight)
         scaleFactorPortrait: 1.0,       // scale factor of portraoit and square images ('max' := width = item width)

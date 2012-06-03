@@ -1,37 +1,55 @@
 /* dock2 - bottom */
-#dock2 {
+#dock {
 	display: inline-block;
-	height: 30px;
-	left: 0px;
-	top: 0px;
-	width: 400px;
 }
 
-.dock-container2 {
-	position: relative;
-	height: 50px;
-	background: url(images/dock-bg.gif);
-	padding-left: 20px;
+#description {
+	border-top:10px solid #333333; 
+	padding:0;
 }
 
-a.dock-item2 {
-	display: block;
-	font: bold 12px Arial, Helvetica, sans-serif;
-	width: 40px;
-	color: #000;
-	bottom: 0px;
-	position: absolute;
-	text-align: center;
-	text-decoration: none;
+#descScroll {
+	max-height:250px; 
+	overflow-x:hidden; 
+	overflow-y:auto;
 }
 
-.dock-item2 span {
-	display: none;
-	padding-left: 20px;
+#descInner {
+	padding:5px 0;
 }
 
-.dock-item2 img {
-	border: none;
-	margin: 5px 10px 0px;
-	width: 100%;
+/*position and hide the menu initially...*/
+#page {
+	position:relative;
+	width:100%;
+	height: 400px; 
+	overflow:hidden;
+}
+
+#menu {
+	position:absolute;
+	bottom:0; 
+	left:0; 
+	width:100%; 
+	display:none;
+}
+
+/*dock styling...*/
+/*...centre the dock...*/
+div.jqDockWrap {
+	margin:0 auto;
+}
+
+/*...set the cursor...*/
+div.jqDock {
+	cursor:pointer;
+}
+/*label styling...*/
+
+div.jqDockLabel {
+	font-weight:bold; 
+	font-style:italic; 
+	white-space:nowrap; 
+	color:#ffffff; 
+	cursor:pointer;
 }

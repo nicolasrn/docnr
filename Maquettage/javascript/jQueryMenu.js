@@ -9,12 +9,13 @@
 			'delta' : 0,
 			'toTop' : true,
 			'css' : {
-						'height': '0px',
-						'top': '0px',
-						'border': '0px solid white'
-					},
+				'position': 'absolute', 
+				'height': '0px',
+				'top': '0px',
+				'border': '0px solid white'
+			},
 			'cssli': {
-						'display': 'list-item'
+				'display': 'list-item'
 			},
 			'listButtonMenu' : {},
 			'duration' : 600

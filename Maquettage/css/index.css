@@ -8,10 +8,10 @@ body {
 
 body div.entete {
 	text-align: center;
-	/*position: fixed;*/
+	position: relative;
 	width: 100%;
 	background-color: gray;
-	/*top: 0px;*/
+	height: 150px;
 }
 
 body div.entete h1 {
@@ -19,6 +19,13 @@ body div.entete h1 {
 	width: 100%;
 	margin:auto;
 }
+
+body div.zoneBandeauNavigation {
+	width: 250px;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+} 
 
 body div.content {
 	padding: 2em;
@@ -52,27 +59,6 @@ body div.content {
 	display: inline-block;
 }
 
-.menu {
-	position: absolute;
-	overflow: hidden;
-	
-	background-image: url("../img/pixel.png");
-	-moz-border-radius: 10px;
-	-webkit-border-radius: 10px;
-	border-radius: 10px;
-	behavior: url('../PIE.htc');
-	
-	border: 2px solid white;
-}
-
-.menuCentral {
-	width: 200px;
-	float: left;
-	background-color: orange;
-	display: inline-block;
-	text-align: left;
-}
-
 .barreInferieurFixe .menuRight .contentMenu .menuDeroulant {
 	
 }
@@ -98,6 +84,20 @@ body div.content {
 	cursor: default;
 }
 
+.menu {
+/* 	cet attribut rend le javascript intrusif */
+/* 	position: absolute; */
+	overflow: hidden;
+	
+	background-image: url("../img/pixel.png");
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	behavior: url('../PIE.htc');
+	
+	border: 2px solid white;
+}
+
 .menu ul.deroulable li {
 	padding: 5px;
 	display: inline;
@@ -121,7 +121,7 @@ body div.content {
 }
 
 .flow .item img {
-/* 	display: none; */
+	display: none;
 }
 
 a, a:VISITED {

@@ -1,23 +1,3 @@
-<!-- Copyright (c) 2007 - 2010 Sebastian Kutsch -->
-
-<!-- Permission is hereby granted, free of charge, to any person obtaining a copy -->
-<!-- of this software and associated documentation files (the "Software"), to deal -->
-<!-- in the Software without restriction, including without limitation the rights -->
-<!-- to use, copy, modify, merge, publish, distribute, sublicense, and/or sell -->
-<!-- copies of the Software, and to permit persons to whom the Software is -->
-<!-- furnished to do so, subject to the following conditions: -->
-
-<!-- The above copyright notice and this permission notice shall be included in -->
-<!-- all copies or substantial portions of the Software. -->
-
-<!-- THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR -->
-<!-- IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, -->
-<!-- FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE -->
-<!-- AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER -->
-<!-- LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, -->
-<!-- OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN -->
-<!-- THE SOFTWARE. -->
-
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
 	<head>
@@ -27,10 +7,12 @@
 		<!-- javascript -->
 		<script type="text/javascript" src="./javascript/jquery.min.js"></script>
 		<script type="text/javascript" src="./javascript/jQueryMenu.js"></script>
+		<script type="text/javascript" src="./javascript/interface.js"></script>
 		<script type="text/javascript" src="./ContentFlow/contentflow.js" load="DEFAULT"></script>
 		
 		<!-- css -->
 		<link type="text/css" href="./css/index.css" rel="stylesheet">
+		<link type="text/css" href="./css/fisheyes.css" rel="stylesheet">
 		
 		<script type="text/javascript">
 			$(function(){
@@ -40,13 +22,26 @@
 				tabMenu.push('.menuLeft');
 				
 				$('.menuRight').toggleMenuDeroulant({
-														delta: 10,
-														listButtonMenu: tabMenu
-													});
+					delta: 10,
+					listButtonMenu: tabMenu
+				});
+
 				$('.menuLeft').toggleMenuDeroulant({
-														delta: 10,
-														listButtonMenu: tabMenu
-													});
+					delta: 10,
+					listButtonMenu: tabMenu
+				});
+				
+				$('#dock2').Fisheye({
+					maxWidth: 60,
+					items: 'a',
+					itemsText: 'span',
+					container: '.dock-container2',
+					itemWidth: 25,
+					proximity: 30,
+					alignment : 'left',
+					valign: 'center',
+					halign : 'center'
+				});
 				
 				$('.barreInferieurFixe').css('height', '40px');
 			})
@@ -56,41 +51,45 @@
 	<body>
 		<div class="entete">
 			<h1><a href="./index.html"><img src="../Menu/image/logo_sdz_fr.png" alt="le site du zéro"/></a></h1>
-			<div id="contentFlow" class="ContentFlow" useAddOns="DEFAULT">
-				<!-- should be place before flow so that contained images will be loaded first -->
-				<div class="loadIndicator">
-					<div class="indicator"></div>
+			
+			<div class="zoneBandeauNavigation">
+				<div id="contentFlow" class="ContentFlow" useAddOns="DEFAULT">
+					<!-- should be place before flow so that contained images will be loaded first -->
+					<div class="loadIndicator">
+						<div class="indicator"></div>
+					</div>
+					
+					<div class="flow">
+						<div class="item">
+							<img class="content" href="http://www.gaara-fr.com" target="_blank" src="../Menu/image/gaara-france-shirt_design.png" alt="Gaara-fr" >
+							<div class="caption"><a href="http://www.gaara-fr.com" target="_blank">Gaara France</a></div>
+						</div>
+						<div class="item">
+							<img class="content" href="http://www.google.fr" target="_blank" src="../Menu/image/google-logo.jpg" alt="google" >
+							<div class="caption"><a href="http://www.google.fr" target="_blank">Google</a></div>
+						</div>
+						<div class="item">
+							<img class="content" href="http://www.siteduzero.com" target="_blank" src="../Menu/image/logo_sdz_fr.png" alt="SDZ" >
+							<div class="caption"><a href="http://www.siteduzero.com" target="_blank">Site du Zero</a></div>
+						</div>
+						<div class="item">
+							<img class="content" href="http://www.commentcamarche.com" target="_blank" src="../Menu/image/logoCommentCaMarche-thumb.jpg" alt="CCM" >
+							<div class="caption"><a href="http://www.commentcamarche.com">Comment Ca Marche</a></div>
+						</div>
+						<div class="item">
+							<img class="content" target="_blank" href="http://www.lorraine.eu" src="../Menu/image/545px-Blason_Lorraine.jpg" alt="Lorraine" >
+							<div class="caption"><a href="http://www.lorraine.eu">Blason Lorraine</a></div>
+						</div>
+					</div>
+					<div class="globalCaption"></div>
+	<!-- 				<div class="scrollbar"> -->
+	<!-- 					<div class="slider"> -->
+	<!-- 						<div class="position"></div> -->
+	<!-- 					</div> -->
+	<!-- 				</div> -->
 				</div>
-				
-				<div class="flow">
-					<div class="item">
-						<img class="content" href="http://www.gaara-fr.com" target="_blank" src="../Menu/image/gaara-france-shirt_design.png" alt="Gaara-fr" >
-						<div class="caption"><a href="http://www.gaara-fr.com" target="_blank">Gaara France</a></div>
-					</div>
-					<div class="item">
-						<img class="content" href="http://www.google.fr" target="_blank" src="../Menu/image/google-logo.jpg" alt="google" >
-						<div class="caption"><a href="http://www.google.fr" target="_blank">Google</a></div>
-					</div>
-					<div class="item">
-						<img class="content" href="http://www.siteduzero.com" target="_blank" src="../Menu/image/logo_sdz_fr.png" alt="SDZ" >
-						<div class="caption"><a href="http://www.siteduzero.com" target="_blank">Site du Zero</a></div>
-					</div>
-					<div class="item">
-						<img class="content" href="http://www.commentcamarche.com" target="_blank" src="../Menu/image/logoCommentCaMarche-thumb.jpg" alt="CCM" >
-						<div class="caption"><a href="http://www.commentcamarche.com">Comment Ca Marche</a></div>
-					</div>
-					<div class="item">
-						<img class="content" target="_blank" href="http://www.lorraine.eu" src="../Menu/image/545px-Blason_Lorraine.jpg" alt="Lorraine" >
-						<div class="caption"><a href="http://www.lorraine.eu">Blason Lorraine</a></div>
-					</div>
-				</div>
-				<div class="globalCaption"></div>
-<!-- 				<div class="scrollbar"> -->
-<!-- 					<div class="slider"> -->
-<!-- 						<div class="position"></div> -->
-<!-- 					</div> -->
-<!-- 				</div> -->
 			</div>
+			
 			<noscript>je suis no script</noscript>
 		</div>
 		
@@ -222,6 +221,21 @@
 				</div>
 				<button type="button" class="title">Menu</button>
 			</div>
+			
+<!-- 			<div class="dock" id="dock2"> -->
+<!-- 				<div class="dock-container2"> -->
+<!-- 					<a class="dock-item2" href="#"><span>Home</span><img src="img/home.png" alt="home" /></a>  -->
+<!-- 					<a class="dock-item2" href="#"><span>Contact</span><img src="img/email.png" alt="contact" /></a>  -->
+<!-- 					<a class="dock-item2" href="#"><span>Portfolio</span><img src="img/portfolio.png" alt="portfolio" /></a>  -->
+<!-- 					<a class="dock-item2" href="#"><span>Music</span><img src="img/music.png" alt="music" /></a>  -->
+<!-- 					<a class="dock-item2" href="#"><span>Video</span><img src="img/video.png" alt="video" /></a>  -->
+<!-- 					<a class="dock-item2" href="#"><span>History</span><img src="img/history.png" alt="history" /></a>  -->
+<!-- 					<a class="dock-item2" href="#"><span>Calendar</span><img src="img/calendar.png" alt="calendar" /></a>  -->
+<!-- 					<a class="dock-item2" href="#"><span>Links</span><img src="img/link.png" alt="links" /></a>  -->
+<!-- 					<a class="dock-item2" href="#"><span>RSS</span><img src="img/rss.png" alt="rss" /></a>  -->
+<!-- 					<a class="dock-item2" href="#"><span>RSS2</span><img src="img/rss2.png" alt="rss" /></a>  -->
+<!-- 				</div> -->
+<!-- 			</div> -->
 			
 			<div class="menuLeft">
 				<div class="menu">

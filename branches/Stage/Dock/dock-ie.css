@@ -1,0 +1,20 @@
+
+/* Inline block fix */
+#dock ul {
+	display: inline;
+	zoom: 1;
+}
+
+#dock li, #dock li a {
+	display: inline;
+	zoom: 1;
+}
+
+/* Image quality fix */
+img {
+	-ms-interpolation-mode: bicubic;
+}
+
+#dock li a span {
+	/* filter: alpha(opacity=40); */
+}

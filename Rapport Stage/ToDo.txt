@@ -1,9 +1,3 @@
-- rédiger daf ou sfd, réintégrer dans sfd sfg général
-- développer dans le trunk
-	+ ajout d'un champ dans le definition.cnd
-	+ modifier la couleur du lien dans un bleu spécial
-	+ passer en développement
-	+ parallèlement, rédiger bordereau de livraison
-	+ nommer dans la fiche Mantis le numéro de livraison
-- réviser la fiche de test puis passer en intégration
-- livraison
+dans le rapport :
+	- faire par de jquery.dock.js
+	- renseigner toutes les légendes par les images ...

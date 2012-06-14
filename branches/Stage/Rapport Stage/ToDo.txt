@@ -1,3 +1,4 @@
 dans le rapport :
 	- faire par de jquery.dock.js
 	- renseigner toutes les légendes par les images ...
+	- faire par du travail sur la newsletter

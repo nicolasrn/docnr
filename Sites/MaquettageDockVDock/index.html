@@ -5,14 +5,14 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		
 		<!-- javascript -->
+		<script type="text/javascript" src="./javascript/debug.js"></script>
 		<script type="text/javascript" src="./javascript/jquery.min.js"></script>
 		<script type="text/javascript" src="./javascript/jQueryMenu.js"></script>
-		<script type='text/javascript' src='./javascript/jquery.jqdock.js'></script>
-		<script type="text/javascript" src="./ContentFlow/contentflow.js" load="DEFAULT"></script>
+		<script type="text/javascript" src="./javascript/jquery.dock.js"></script>
 		
 		<!-- css -->
 		<link type="text/css" href="./css/index.css" rel="stylesheet"/>
-		<link type="text/css" href="./css/fisheyes.css" rel="stylesheet"/>
+		<link type="text/css" href="./css/dock.css" rel="stylesheet"/>
 		
 		<script type="text/javascript">
 			$(function(){
@@ -30,8 +30,11 @@
 					listButtonMenu: tabMenu
 				});
 				
-				$('div#dock').jqDock();
-				
+				$('#dock').dock({
+					'proximity': 180,
+					'iconSmall': 32, 
+					'iconLarge': 64
+				});
 			});
 			
 		</script>
@@ -40,42 +43,21 @@
 	<body>
 		<div class="entete">
 			<h1><a href="./index.html"><img src="../Menu/image/logo_sdz_fr.png" alt="Le Site du Zéro"/></a></h1>
-			<div id="contentFlow" class="ContentFlow" useAddOns="DEFAULT">
-				<!-- should be place before flow so that contained images will be loaded first -->
-				<div class="loadIndicator">
-					<div class="indicator"></div>
-				</div>
-				
-				<div class="flow">
-					<div class="item">
-						<img class="content" href="http://www.gaara-fr.com" target="_blank" src="./img/calendar.png" alt="Calendrier" >
-						<div class="caption"><a href="http://www.gaara-fr.com" target="_blank">Calendrier</a></div>
-					</div>
-					<div class="item">
-						<img class="content" href="http://www.google.fr" target="_blank" src="./img/history.png" alt="Historique" >
-						<div class="caption"><a href="http://www.google.fr" target="_blank">Historique</a></div>
-					</div>
-					<div class="item">
-						<img class="content" href="http://www.siteduzero.com" target="_blank" src="./img/home.png" alt="Home" >
-						<div class="caption"><a href="http://www.siteduzero.com" target="_blank">Home</a></div>
-					</div>
-					<div class="item">
-						<img class="content" href="http://www.commentcamarche.com" target="_blank" src="./img/music.png" alt="Musique" >
-						<div class="caption"><a href="http://www.commentcamarche.com">Musique</a></div>
-					</div>
-					<div class="item">
-						<img class="content" target="_blank" href="http://www.lorraine.eu" src="./img/video.png" alt="Video" >
-						<div class="caption"><a href="http://www.lorraine.eu">Video</a></div>
-					</div>
-				</div>
-				<div class="globalCaption"></div>
-<!-- 				<div class="scrollbar"> -->
-<!-- 					<div class="slider"> -->
-<!-- 						<div class="position"></div> -->
-<!-- 					</div> -->
-<!-- 				</div> -->
+			<div id="dock" class="dock">
+				<ul>
+					<li><a href="#address"><span>Address</span><img src="img/icon-address.png" alt="[address]" /></a></li><!--
+					--><li><a href="#band"><span>Band</span><img src="img/icon-band.png" alt="[band]" /></a></li><!--
+					--><li><a href="#calendar"><span>Calendar</span><img src="img/icon-calendar.png" alt="[calendar]" /></a></li><!--
+					--><li class="active"><a href="#chat"><span>Chat</span><img src="img/icon-chat.png" alt="[chat]" /></a></li><!--
+					--><li class="active"><a href="#music"><span>Music</span><img src="img/icon-music.png" alt="[music]" /></a></li><!--
+					--><li><a href="#photo"><span>Photo</span><img src="img/icon-photo.png" alt="[photo]" /></a></li><!--
+					--><li><a href="#text"><span>Text</span><img src="img/icon-text.png" alt="[text]" /></a></li><!--
+					--><li><a href="#folder?src=/apps/"><span>Applications</span><img src="img/icon-applications.png" alt="[apps]" /></a></li><!--
+					--><li><a href="#folder?src=/pictures/"><span>Pictures</span><img src="img/icon-pictures.png" alt="[pictures]" /></a></li><!--
+					--><li><a href="#folder?src=/documents/"><span>Documents</span><img src="img/icon-documents.png" alt="[documents]" /></a></li><!--
+					--><li><a href="#bin"><span>Bin</span><img src="img/icon-bin.png" alt="[bin]" /></a></li>
+				</ul>
 			</div>
-			<noscript>je suis no script</noscript>
 		</div>
 		
 		<div id="content" class="content">

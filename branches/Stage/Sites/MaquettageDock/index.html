@@ -8,7 +8,6 @@
 		<script type="text/javascript" src="./javascript/jquery.min.js"></script>
 		<script type="text/javascript" src="./javascript/jQueryMenu.js"></script>
 		<script type='text/javascript' src='./javascript/jquery.jqdock.js'></script>
-		<script type="text/javascript" src="./ContentFlow/contentflow.js" load="DEFAULT"></script>
 		
 		<!-- css -->
 		<link type="text/css" href="./css/index.css" rel="stylesheet"/>
@@ -30,8 +29,7 @@
 					listButtonMenu: tabMenu
 				});
 				
-				$('div#dock').jqDock();
-				
+				$('.dock').jqDock();
 			});
 			
 		</script>
@@ -40,42 +38,13 @@
 	<body>
 		<div class="entete">
 			<h1><a href="./index.html"><img src="../Menu/image/logo_sdz_fr.png" alt="Le Site du Zéro"/></a></h1>
-			<div id="contentFlow" class="ContentFlow" useAddOns="DEFAULT">
-				<!-- should be place before flow so that contained images will be loaded first -->
-				<div class="loadIndicator">
-					<div class="indicator"></div>
-				</div>
-				
-				<div class="flow">
-					<div class="item">
-						<img class="content" href="http://www.gaara-fr.com" target="_blank" src="./img/calendar.png" alt="Calendrier" >
-						<div class="caption"><a href="http://www.gaara-fr.com" target="_blank">Calendrier</a></div>
-					</div>
-					<div class="item">
-						<img class="content" href="http://www.google.fr" target="_blank" src="./img/history.png" alt="Historique" >
-						<div class="caption"><a href="http://www.google.fr" target="_blank">Historique</a></div>
-					</div>
-					<div class="item">
-						<img class="content" href="http://www.siteduzero.com" target="_blank" src="./img/home.png" alt="Home" >
-						<div class="caption"><a href="http://www.siteduzero.com" target="_blank">Home</a></div>
-					</div>
-					<div class="item">
-						<img class="content" href="http://www.commentcamarche.com" target="_blank" src="./img/music.png" alt="Musique" >
-						<div class="caption"><a href="http://www.commentcamarche.com">Musique</a></div>
-					</div>
-					<div class="item">
-						<img class="content" target="_blank" href="http://www.lorraine.eu" src="./img/video.png" alt="Video" >
-						<div class="caption"><a href="http://www.lorraine.eu">Video</a></div>
-					</div>
-				</div>
-				<div class="globalCaption"></div>
-<!-- 				<div class="scrollbar"> -->
-<!-- 					<div class="slider"> -->
-<!-- 						<div class="position"></div> -->
-<!-- 					</div> -->
-<!-- 				</div> -->
+			<div class="dock">
+					<img class="content" href="http://www.gaara-fr.com" target="_blank" src="./img/calendar.png" alt="Calendrier" >
+					<img class="content" href="http://www.google.fr" target="_blank" src="./img/history.png" alt="Historique" >
+					<img class="content" href="http://www.siteduzero.com" target="_blank" src="./img/home.png" alt="Home" >
+					<img class="content" href="http://www.commentcamarche.com" target="_blank" src="./img/music.png" alt="Musique" >
+					<img class="content" target="_blank" href="http://www.lorraine.eu" src="./img/video.png" alt="Video" >
 			</div>
-			<noscript>je suis no script</noscript>
 		</div>
 		
 		<div id="content" class="content">
@@ -209,7 +178,7 @@
 			</div>
 			
 			
-			<div id="dock"> 
+			<div id="dock" class="dock"> 
 				<img src='./img/history.png' title='Favourites' alt='hist' />
 				<img src='./img/home.png' title='Pictures' alt='pic' />
 				<img src='./img/music.png' title='Music' alt='mus' />

@@ -1,5 +1,5 @@
 /* dock2 - bottom */
-#dock {
+.dock {
 	display: inline-block;
 }
 

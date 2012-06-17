@@ -17,6 +17,15 @@
 #outline div#caption, #outline div#text {
 	display: inline-block;
 	vertical-align: top;
+	word-wrap: break-word;
+	-webkit-hyphens: auto;
+	-moz-hyphens: auto;
+	-ms-hyphens: auto;
+	-o-hyphens: auto;
+	hyphens: auto;
+
+/*	-o-text-overflow: ellipsis; 
+	text-overflow: ellipsis;*/
 }
 
 #caption 

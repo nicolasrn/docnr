@@ -1,4 +1,13 @@
 dans le rapport :
 	- faire par de jquery.dock.js
 	- renseigner toutes les légendes par les images ...
+	
 	- faire par du travail sur la newsletter
+
+exposer pb pour avis auprès de Loic
+	- sur le fait de mettre sur jnt:content
+		+ minimum a modifier, mais la saisie n'est pas obligatoire
+	- sur le fait de un jmix sur le composant souhaité
+		+ plus de recherche mais saisie obligatoire
+	- ou faire un daf expliquant les avantages est inconvénient 
+	  de chaque méthode et laisser le client choisir

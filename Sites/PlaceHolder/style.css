@@ -1,0 +1,87 @@
+body{
+	background: url('css/img/nmoothwall.png');
+	color: #666;
+	font-family: Arial;
+}
+
+.wrap {
+	width: 500px;
+	margin: 0 auto;
+}
+
+h1 {
+	font-family: Helvetica;
+	color: #000000;
+	text-shadow: 0px #ffffff;
+}
+
+div.input,
+fieldset.input {
+	padding-bottom: 20px;
+}
+
+div.input label,
+fieldset.input label {
+	display: block;
+	padding-bottom: 10px;
+}
+
+body .input input, 
+body .input textarea {
+	width: 428px;
+	height: 23px;
+
+	border-radius: 5px 5px 5px 5px;
+	background-color: rgba(255, 255, 255, 0.3);
+	/*background-color: transparent;*/
+
+	box-shadow: 1px 2px 10px #AAA;
+	color: #727272;
+
+	padding: 5px;
+}
+
+body .input textarea {
+	height: 160px;
+}
+
+div.placeholder, 
+fieldset.placeholder {
+	/*border: 1px solid #ff0000;*/
+	width: 444px;
+	height: 19px;
+	position: relative;
+	background-color: rgba(255, 255, 255, 0.3);
+	margin-bottom: 10px;
+}
+
+div.placeholder.textarea, 
+fieldset.placeholder.textarea {
+	height: 160px;
+}
+
+div.placeholder.textarea label, 
+fieldset.placeholder.textarea legend {
+	position: absolute;
+	top: 0;
+	left: 5px;
+	height: 25px;
+	line-height: 25px;
+}
+
+div.placeholder label, 
+fieldset.placeholder legend {
+	position: absolute;
+	top: 0;
+	left: 5px;
+	height: 33px;
+	line-height: 33px;
+}
+
+div.placeholder input, div.placeholder textarea,
+fieldset.placeholder input, fieldset.placeholder textarea {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: transparent;
+}

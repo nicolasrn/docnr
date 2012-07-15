@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<title>Test placeholder</title>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+		<script type="text/javascript" src="main.js"></script>
+		<link type="text/css" rel="stylesheet" href="./style.css"/>
+	</head>
+	<body>
+		<div class="wrap">
+			<h1>Faux Placeholder</h1>
+			<form action="#">
+				<fieldset>
+					<legend>Vrai placeholder</legend>
+					<div class="input">
+						<label for="vrai">Vrai PlaceHolder</label>
+						<input id="vrai" type="text" placeholder="Votre nom et pr&eacute;nom"/>
+					</div>
+				</fieldset>
+
+				<fieldset>
+					<legend>placeholder simuler en javascript</legend>
+					<div class="input">
+						<label for="faux">Faux Placeholder en utilisant la valeur</label>
+						<input id="faux" type="text" value="Votre nom et pr&eacute;nom" class="autoEmpty"/>
+					</div>
+				</fieldset>
+
+				<fieldset class="input placeholder">
+						<legend><label for="placeholder">Votre nom et pr&eacute;nom</label></legend>
+						<input id="placeholder" type="text" />
+				</fieldset>
+				<fieldset class="input placeholder textarea">
+						<legend><label for="textarea">Votre nom et pr&eacute;nom</label></legend>
+						<textarea id="textarea" cols="30" rows="10"></textarea>
+				</fieldset>
+			</form>
+		</div>
+	</body>
+</html>
